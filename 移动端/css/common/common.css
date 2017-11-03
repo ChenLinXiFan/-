@@ -1,0 +1,22 @@
+@keyframes arrowTop {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+@keyframes rotateMusic {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

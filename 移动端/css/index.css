@@ -1,0 +1,237 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+}
+.subHead {
+  display: none;
+}
+@keyframes arrowTop {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+@keyframes rotateMusic {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#wrap {
+  height: 100%;
+}
+#wrap .maincontent {
+  height: 100%;
+  position: relative;
+}
+#wrap .maincontent canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .5s opacity;
+  z-index: 10;
+}
+#wrap .maincontent .list {
+  height: 100%;
+}
+#wrap .maincontent .list .li1child {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/b.png") no-repeat;
+  background-size: 100% 100%;
+}
+#wrap .maincontent .list .li1child ul {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  color: white;
+  font-size: 20px;
+}
+#wrap .maincontent .list .li2child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/c.png") no-repeat;
+  background-size: 100% 100%;
+}
+#wrap .maincontent .list .li2child ul li {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+}
+#wrap .maincontent .list .li2child ul li:nth-of-type(1) {
+  background: url("../img/c1.png") no-repeat;
+  background-size: 100% 100%;
+  left: 43%;
+  top: 30%;
+}
+#wrap .maincontent .list .li2child ul li:nth-of-type(2) {
+  background: url("../img/c2.png") no-repeat;
+  background-size: 100% 100%;
+  left: 13%;
+  top: 40%;
+}
+#wrap .maincontent .list .li2child ul li:nth-of-type(3) {
+  background: url("../img/c3.png") no-repeat;
+  background-size: 100% 100%;
+  left: 73%;
+  top: 40%;
+}
+#wrap .maincontent .list .li2child ul li:nth-of-type(4) {
+  background: url("../img/c4.png") no-repeat;
+  background-size: 100% 100%;
+  left: 13%;
+  top: 65%;
+}
+#wrap .maincontent .list .li2child ul li:nth-of-type(5) {
+  background: url("../img/c5.png") no-repeat;
+  background-size: 100% 100%;
+  left: 73%;
+  top: 65%;
+}
+#wrap .maincontent .list .li2child ul li:nth-of-type(6) {
+  background: url("../img/c6.png") no-repeat;
+  background-size: 100% 100%;
+  left: 43%;
+  top: 75%;
+}
+#wrap .maincontent .list .li2child ul li.activeRotate {
+  left: 43%;
+  top: 52%;
+}
+#wrap .maincontent .list .li3child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/d.png") no-repeat;
+  background-size: 100% 100%;
+}
+#wrap .maincontent .list .li3child div {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  margin-left: -115px;
+  width: 230px;
+  height: 111px;
+  background: url("../img/d1.png") no-repeat;
+  background-size: 100% 100%;
+}
+#wrap .maincontent .list .li4child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/e.png") no-repeat;
+  background-size: 100% 100%;
+}
+#wrap .maincontent .list .li4child ul li {
+  position: absolute;
+  font-size: 11px;
+  color: white;
+  border: 1px #fff solid;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#wrap .maincontent .list .li4child ul li:nth-of-type(1) {
+  width: 110px;
+  height: 150px;
+  left: 4%;
+  top: 15%;
+}
+#wrap .maincontent .list .li4child ul li:nth-of-type(2) {
+  width: 140px;
+  height: 85px;
+  left: 50%;
+  top: 19%;
+}
+#wrap .maincontent .list .li4child ul li:nth-of-type(3) {
+  width: 55px;
+  height: 140px;
+  left: 78%;
+  top: 40%;
+}
+#wrap .maincontent .list .li4child ul li.activeShow {
+  width: 0;
+  height: 0;
+}
+#wrap .maincontent .list .li5child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/f.png") no-repeat;
+  background-size: 100% 100%;
+}
+#wrap .maincontent .list.zIndex {
+  z-index: 5;
+}
+#wrap .maincontent .arrow {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  width: 45px;
+  height: 26px;
+  margin-left: -22.5px;
+  background: url("../img/arr.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 7;
+  animation: 1s infinite arrowTop;
+}
+#wrap .maincontent .music {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/music.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 7;
+}
+#wrap .maincontent .music.activeMusic {
+  animation: 1s infinite rotateMusic linear;
+}

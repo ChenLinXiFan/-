@@ -1,0 +1,34 @@
+
+//公共背景
+.commonBackground(@bag){
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/@{bag}.png") no-repeat;
+  background-size: 100% 100%;
+}
+//arrow动画
+@keyframes arrowTop {
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  60%{
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+@keyframes rotateMusic {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
